@@ -11,7 +11,7 @@ FROM python:$PYTHON_VERSION-slim-stretch
 # H3 Depdendencies
 RUN apt-get update && \
     apt-get install -yqq wget ${BUILD_PACKAGES} libffi-dev libgdal-dev zlib1g-dev libgeos-dev libtool clang-format && \
-    wget https://github.com/uber/h3/archive/${H3_LIB_HASH}.zip && \
+    wget "https://github.com/uber/h3/archive/${H3_LIB_HASH}.zip" && \
     unzip ${H3_LIB_HASH}.zip && \
     cd h3-af70affba76c64adbb836ee1864f5a4b495f0f6a && \
     cmake . && \
