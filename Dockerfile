@@ -4,7 +4,7 @@
 
 ARG PYTHON_VERSION=3.6
 ARG BUILD_PACKAGES="gcc make cmake curl build-essential apt-utils cmake-curses-gui git unzip doxygen"
-ARG H3_LIB_HASH=af70aff
+ARG H3_LIB_HASH="af70aff"
 
 FROM python:$PYTHON_VERSION-slim-stretch
 
